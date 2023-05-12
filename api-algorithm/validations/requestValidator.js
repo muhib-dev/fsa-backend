@@ -1,4 +1,5 @@
 const createError = require("../utils/createError");
+const isObjectEmpty = require("../utils/isObjectEmpty");
 
 const validateInteger = (req, res, next) => {
   const fromValue = req.query.from;
@@ -49,18 +50,13 @@ const validateText = (req, res, next) => {
   next();
 };
 
-const validatelist = (req, res, next) => {
-  const { selectedFields } = req.body;
-
-  if (!Array.isArray(selectedFields) || !selectedFields.length) {
-    const error = createError(
-      "selected fields must be a list. ex: ['firstName','lastName']",
-      400
-    );
+const validateFields = (req, res, next) => {
+  if (isObjectEmpty(req.query)) {
+    const error = createError("user selected fields required!", 400);
     return next(error);
   }
 
   next();
 };
 
-module.exports = { validateInteger, validateText, validatelist };
+module.exports = { validateInteger, validateText, validateFields };

@@ -1,10 +1,10 @@
 const express = require("express");
 const userProfileController = require("../controllers/userProfileController");
-const { validatelist } = require("../validations/requestValidator");
+const { validateFields } = require("../validations/requestValidator");
 
 const router = express.Router();
 
 // api/user-profile
-router.post("/", validatelist, userProfileController.createProfile);
+router.get("/", validateFields, userProfileController.createProfile);
 
 module.exports = router;

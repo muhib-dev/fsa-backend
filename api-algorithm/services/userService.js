@@ -1,5 +1,6 @@
 const usersData = require("../constraints/users.json");
 const getRandomItemFromList = require("../utils/getRandomItemFromList");
+const isObjectEmpty = require("../utils/isObjectEmpty");
 
 /**
  * get user profile by selected fields
@@ -7,7 +8,9 @@ const getRandomItemFromList = require("../utils/getRandomItemFromList");
  * @returns {object} matched given fields
  */
 const getProfile = (fields = []) => {
-  const randomUser = getRandomItemFromList(usersData, 0, usersData.length);
+  const randomUser = getRandomItemFromList(usersData, 0, usersData.length - 1);
+
+  if (isObjectEmpty(randomUser)) return null;
 
   const matchedFields = {};
 

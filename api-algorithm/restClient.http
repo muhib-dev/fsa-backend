@@ -10,18 +10,10 @@ GET http://localhost:5000/health
 // get random number from min and max numbers
 GET http://localhost:5000/api/random-number?from=1&to=10
 
-
 ###
 // get number of characters from a string
 GET http://localhost:5000/api/filter-charecters?text=muhib123@me.com
 
 ###
-// generate user profile by selected fields
-#  "selectedFields":["firstName","lastName","email","avater","address"]
-POST http://localhost:5000/api/user-profile
-content-type: application/json
-
-{
-    "selectedFields":["firstName","email","avater","address"]
-}
-
+// generate user profile by selected fields ["firstName","lastName","email","avatar","address"]
+GET http://localhost:5000/api/user-profile?"firstName"&lastName&email&avatar&address
