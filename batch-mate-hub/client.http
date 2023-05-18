@@ -1,0 +1,33 @@
+###
+// home route
+GET http://localhost:8080
+
+###
+// health route
+GET http://localhost:8080/health
+
+
+###
+// get all students
+GET http://localhost:8080/api/students
+
+###
+// get student by id
+GET http://localhost:8080/api/students/2
+
+
+###
+// search student by name
+GET http://localhost:8080/api/students/q/find?search=John
+
+
+###
+// signup student
+POST http://localhost:8080/api/students
+content-type: application/json
+
+{
+    "studentName":"muhibullah",
+    "bloodGroup":"o+",
+    "presentAddress":"dhaka,bangladesh"
+}

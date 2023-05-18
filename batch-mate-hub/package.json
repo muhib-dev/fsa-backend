@@ -1,7 +1,7 @@
 {
-  "name": "algorithm-api",
+  "name": "batch-mate-hub",
   "version": "1.0.0",
-  "description": "a simple nodejs algorithm api",
+  "description": "a simple api for manage batch mate informations",
   "main": "server.js",
   "scripts": {
     "dev": "nodemon server.js",

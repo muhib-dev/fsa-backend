@@ -1,0 +1,38 @@
+[
+  {
+    "studentId": 1,
+    "studentName": "John Doe",
+    "email": "john.doe@example.com",
+    "bloodGroup": "A+",
+    "photo": "https://example.com/john.jpg",
+    "occupation": "Student",
+    "presentAddress": "123 Main St, City"
+  },
+  {
+    "studentId": 2,
+    "studentName": "John Smith",
+    "email": "jane.smith@example.com",
+    "bloodGroup": "O-",
+    "photo": "https://example.com/jane.jpg",
+    "occupation": "Student",
+    "presentAddress": "456 Elm St, City"
+  },
+  {
+    "studentId": 3,
+    "studentName": "Max Williams",
+    "email": "max.williams@example.com",
+    "bloodGroup": "B+",
+    "photo": "https://example.com/max.jpg",
+    "occupation": "Student",
+    "presentAddress": "789 Oak St, City"
+  },
+  {
+    "studentId": 4,
+    "studentName": "Williams John",
+    "email": "max.williams@example.com",
+    "bloodGroup": "O-",
+    "photo": "https://example.com/max.jpg",
+    "occupation": "Student",
+    "presentAddress": "789 Oak St, City"
+  }
+]
